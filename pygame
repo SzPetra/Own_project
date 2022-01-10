@@ -1,0 +1,12 @@
+Pygame uses Rect obejcts to store and manipulate rectangular areas(left, top, width and height) left as in how many pixels from the left side, top as in how many pixels from the top side
+
+Pygame does not provide a direct way to write text onto a Surface object. The method render() must be used to create a Surface object from the text, which then can be blit to the screen. It can only render single lines, a newline character is not rendered.
+
+draw() is used to draw a rectangle pygame.draw.rect(screen, color, what to draw)
+
+pygame.mouse isused to get the current state of the mouse device. When the display mode is set, the event queue will start receiving mouse events.
+
+the point-collision is documented in the PyGame Rect class. Essentially you pass a coordinate to pygame. Rect.collidepoint(), and it will return True if that point is within the bounds of the rectangle.
+
+update() to make the display Surface actually appear on the user's monitor. BUT pygame.display.update() will only make the display Surface
+
